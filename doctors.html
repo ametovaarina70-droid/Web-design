@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Surgical Team – Nova Surgical Center</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">NSC</span>
+            <span class="logo-text">Nova Surgical Center</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="doctors.html" class="nav-link nav-link--active">Surgeons</a></li>
+                <li><a href="booking.html" class="nav-link">Book an Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+ <!-- Language switcher (visual only, demo) -->
+        <div class="lang-switch" aria-label="Language selector">
+            <span class="lang-switch__icon" aria-hidden="true">🌐</span>
+            <a href="#" class="lang-switch__link lang-switch__link--active" lang="en">EN</a>
+            <span class="lang-switch__divider">/</span>
+            <a href="#" class="lang-switch__link" lang="cs">CS</a>
+        </div>
+        <form class="site-search" action="search-results.html" method="get" role="search">
+            <label class="visually-hidden" for="global-search">Search on this site</label>
+            <input
+                id="global-search"
+                type="search"
+                name="q"
+                class="search-input"
+                placeholder="Search procedures or surgeons"
+                aria-label="Search"
+                required
+            >
+            <button type="submit" class="btn btn--secondary">Search</button>
+        </form>
+    </div>
+</header>
+
+<main class="site-main">
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol class="breadcrumbs-list">
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Surgeons</li>
+        </ol>
+    </nav>
+
+    <section class="section" aria-labelledby="team-title">
+        <div class="container">
+            <header class="section-header">
+                <h1 id="team-title">Our Surgical Team</h1>
+                <p>
+                    Meet the board-certified surgeons who perform general, minimally invasive,
+                    gastrointestinal, oncologic and trauma procedures at Nova Surgical Center.
+                </p>
+            </header>
+
+            <!-- Filters (статичные, просто для вида) -->
+    
+<div class="surgeon-filters">
+
+    <div class="surgeon-filter-group">
+        <label for="specialization">Specialization</label>
+        <select id="specialization" name="specialization">
+            <option value="">All specializations</option>
+            <option value="general">General</option>
+            <option value="gi">Gastrointestinal</option>
+            <option value="laparo">Minimally invasive</option>
+        </select>
+    </div>
+
+    <div class="surgeon-filter-group">
+        <label for="availability">Availability</label>
+        <select id="availability" name="availability">
+            <option value="">Any day</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+        </select>
+    </div>
+
+</div>
+
+            <!-- Cards grid -->
+            <section class="surgeon-grid" aria-label="List of surgeons">
+
+                <!-- Dr. Michael Hart -->
+                <article class="card surgeon-card surgeon-card--featured">
+                    <div class="surgeon-card-main">
+                        <img
+                            src="./assets/img/doctors/michael-hart.jpg"
+                            alt="Portrait of Dr. Michael Hart"
+                            class="surgeon-photo"
+                        >
+
+                        <div>
+                            <h2>Dr. Michael Hart, MD</h2>
+                            <p class="surgeon-specialization">
+                                General &amp; Minimally Invasive Surgery
+                            </p>
+                            <p>
+                                Focused on laparoscopic procedures, hernia repair and emergency
+                                abdominal surgery with a strong emphasis on fast recovery and low
+                                complication rates.
+                            </p>
+
+                            <ul class="surgeon-tags">
+                                <li>Hernia repair</li>
+                                <li>Laparoscopic surgery</li>
+                                <li>Emergency care</li>
+                            </ul>
+
+                            <div class="surgeon-actions">
+                                <a href="doctor-michael.html" class="btn btn--primary">View profile</a>
+                                <a href="booking.html" class="btn btn--ghost">Book appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dr. Elena Foster -->
+                <article class="card surgeon-card">
+                    <div class="surgeon-card-main">
+                        <img
+                            src="./assets/img/doctors/elena-foster.jpg"
+                            alt="Portrait of Dr. Elena Foster"
+                            class="surgeon-photo"
+                        >
+
+                        <div>
+                            <h2>Dr. Elena Foster, MD</h2>
+                            <p class="surgeon-specialization">
+                                Gastrointestinal &amp; Oncologic Surgery
+                            </p>
+                            <p>
+                                Specializes in gastrointestinal tumors, colon surgery and complex
+                                abdominal oncologic operations with close cooperation with oncology teams.
+                            </p>
+
+                            <ul class="surgeon-tags">
+                                <li>GI surgery</li>
+                                <li>Tumor removal</li>
+                                <li>Follow-up care</li>
+                            </ul>
+
+                            <div class="surgeon-actions">
+                                <a href="doctor-elena.html" class="btn btn--primary">View profile</a>
+                                <a href="booking.html" class="btn btn--ghost">Book appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dr. Tomas Rivera -->
+                <article class="card surgeon-card">
+                    <div class="surgeon-card-main">
+                        <img
+                            src="./assets/img/doctors/tomas-rivera.jpg"
+                            alt="Portrait of Dr. Tomas Rivera"
+                            class="surgeon-photo"
+                        >
+
+                        <div>
+                            <h2>Dr. Tomas Rivera, MD</h2>
+                            <p class="surgeon-specialization">
+                                Reconstructive &amp; Trauma Surgery
+                            </p>
+                            <p>
+                                Performs reconstructive procedures after trauma or major surgery with a
+                                focus on restoring both function and appearance.
+                            </p>
+
+                            <ul class="surgeon-tags">
+                                <li>Reconstruction</li>
+                                <li>Post-trauma</li>
+                                <li>Complex cases</li>
+                            </ul>
+
+                            <div class="surgeon-actions">
+                                <a href="doctor-tomas.html" class="btn btn--primary">View profile</a>
+                                <a href="booking.html" class="btn btn--ghost">Book appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <h2 class="footer-title">Nova Surgical Center</h2>
+            <p>
+                Fictional surgical clinic created as part of a university student project.
+                All texts and images are AI-generated for educational purposes only.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Surgeons</a></li>
+                <li><a href="booking.html">Book an Appointment</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Contact</h3>
+            <p>Green Avenue 12, Prague</p>
+            <p>Phone: <a href="tel:+420123456789">+420 123 456 789</a></p>
+            <p>Email: <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
+            <p>Opening hours: Mon–Fri 8:00–18:00</p>
+        </div>
+
+        <aside class="footer-column" aria-label="Project information">
+            <h3 class="footer-subtitle">Project info</h3>
+            <p>Student project – Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan</p>
+            <p>Course: Web Design / UX</p>
+            <p>Year: 2025</p>
+        </aside>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>© 2025 Nova Surgical Center (fictional). Student project — Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan.</p>
+            <p class="footer-note">
+                This website is a non-commercial prototype created for educational purposes only.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

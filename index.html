@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Surgical Center – Advanced Surgical Care</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">NSC</span>
+                <span class="logo-text">Nova Surgical Center</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link nav-link--active">Home</a></li>
+                    <li><a href="doctors.html" class="nav-link">Surgeons</a></li>
+                    <li><a href="booking.html" class="nav-link">Book an Appointment</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+ <!-- Language switcher (visual only, demo) -->
+        <div class="lang-switch" aria-label="Language selector">
+            <span class="lang-switch__icon" aria-hidden="true">🌐</span>
+            <a href="#" class="lang-switch__link lang-switch__link--active" lang="en">EN</a>
+            <span class="lang-switch__divider">/</span>
+            <a href="#" class="lang-switch__link" lang="cs">CS</a>
+        </div>
+
+            <form class="site-search" action="search-results.html" method="get" role="search">
+                <label class="visually-hidden" for="global-search">Search on this site</label>
+                <input
+                    id="global-search"
+                    type="search"
+                    name="q"
+                    class="search-input"
+                    placeholder="Search procedures or surgeons"
+                    aria-label="Search"
+                    required
+                >
+                <button type="submit" class="btn btn--secondary">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol class="breadcrumbs-list">
+                <li><a href="index.html">Home</a></li>
+                <li aria-current="page">Overview</li>
+            </ol>
+        </nav>
+
+        <!-- Hero section with background image -->
+        <section class="hero hero--bg" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="container hero-inner hero-inner--bg">
+                <div class="hero-content hero-content--light">
+                    <h1 id="hero-title">Advanced Surgical Care You Can Trust</h1>
+                    <p class="hero-subtitle">
+                        Personalized treatment, modern techniques, and a patient-centered approach
+                        for safer surgeries and faster recovery.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="booking.html" class="btn btn--primary">Book a Consultation</a>
+                    </div>
+                    <ul class="hero-highlights hero-highlights--light">
+                        <li>Board-certified surgeons</li>
+                        <li>Minimally invasive techniques</li>
+                        <li>Comprehensive pre- and post-operative care</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About us -->
+        <section class="section" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="about-title">About Nova Surgical Center</h2>
+                    <p>
+                        At Nova Surgical Center we combine evidence-based medicine, advanced technology,
+                        and a strong focus on safety to deliver high-quality surgical care.
+                    </p>
+                </header>
+
+                <div class="about-grid">
+                    <article class="card">
+                        <h3>Patient-centered care</h3>
+                        <p>
+                            Every patient receives an individual treatment plan, clear explanations,
+                            and continuous support before and after surgery.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Modern surgical techniques</h3>
+                        <p>
+                            We specialize in minimally invasive and laparoscopic procedures that help
+                            reduce pain and shorten recovery time.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Experienced team</h3>
+                        <p>
+                            Our board-certified surgeons work closely with anesthesiologists and nurses
+                            to ensure safe and efficient operations.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="section" aria-labelledby="services-grid-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="services-grid-title">Surgical services overview</h2>
+                    <p>
+                        Overview of selected procedures and areas of care provided by Nova Surgical Center.
+                        This section is also used to demonstrate CSS Grid layout for the student project.
+                    </p>
+                </header>
+
+                <div class="services-grid">
+                    <article class="service-card service-card--wide">
+                        <h3>Minimally invasive surgery</h3>
+                        <p>Keyhole procedures with smaller incisions and faster recovery.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Hernia repair</h3>
+                        <p>Elective and emergency hernia surgery with structured follow-up.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Gallbladder surgery</h3>
+                        <p>Laparoscopic cholecystectomy for gallstones and biliary pain.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>GI oncology</h3>
+                        <p>Tumor removal in stomach, colon and small intestine.</p>
+                    </article>
+
+                    <article class="service-card service-card--tall">
+                        <h3>Reconstructive surgery</h3>
+                        <p>
+                            Abdominal wall reconstruction after multiple operations or trauma
+                            with focus on function and aesthetics.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Trauma &amp; emergency</h3>
+                        <p>Emergency abdominal surgery for bleeding and acute pain.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Pre-operative assessment</h3>
+                        <p>Consultations, imaging and lab tests before surgery.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Post-operative care</h3>
+                        <p>Wound checks, pain management and return-to-activity plans.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services (grid layout) -->
+        <section class="section section--muted" aria-labelledby="services-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="services-title">Our Surgical Services</h2>
+                    <p>Key areas of expertise available at our center.</p>
+                </header>
+
+                <div class="services-grid">
+                    <article class="service-card service-card--wide">
+                        <h3>General Surgery</h3>
+                        <p>
+                            Comprehensive care for abdominal conditions, hernias, soft tissue
+                            and emergency surgical cases.
+                        </p>
+                        <a href="doctor-detail.html" class="text-link">View typical procedures</a>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Minimally Invasive Surgery</h3>
+                        <p>
+                            Laparoscopic and endoscopic procedures designed to reduce scarring,
+                            pain and hospital stay.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Gastrointestinal Surgery</h3>
+                        <p>
+                            Surgical treatment for gallbladder, stomach, small and large intestine
+                            disorders.
+                        </p>
+                    </article>
+
+                    <article class="service-card service-card--tall">
+                        <h3>Oncologic Surgery</h3>
+                        <p>
+                            Tumor removal and cooperation with oncology specialists for
+                            long-term follow-up care.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Reconstructive Surgery</h3>
+                        <p>
+                            Procedures to restore form and function after trauma or complex operations.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why choose us -->
+        <section class="section" aria-labelledby="why-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="why-title">Why patients choose us</h2>
+                </header>
+
+                <div class="why-grid">
+                    <article class="card card--icon">
+                        <h3>Certified specialists</h3>
+                        <p>
+                            Our surgeons are certified and regularly participate in professional
+                            training and international conferences.
+                        </p>
+                    </article>
+
+                    <article class="card card--icon">
+                        <h3>Safety and quality</h3>
+                        <p>
+                            Strict protocols, checklists and continuous monitoring of outcomes help
+                            minimize complications.
+                        </p>
+                    </article>
+
+                    <article class="card card--icon">
+                        <h3>Clear communication</h3>
+                        <p>
+                            We explain each step of the treatment plan in understandable language,
+                            so you always know what to expect.
+                        </p>
+                    </article>
+
+                    <article class="card card--icon">
+                        <h3>Coordinated care</h3>
+                        <p>
+                            Our team works together with your primary physician and specialists
+                            to coordinate diagnostics and follow-up care.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section section--muted" aria-labelledby="testimonials-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="testimonials-title">Patient stories</h2>
+                    <p>Experiences shared by patients treated in our center.</p>
+                </header>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial">
+                        <p class="testimonial-text">
+                            “The team was extremely professional and kind. My laparoscopic surgery went
+                            smoothly and I was able to return to work much faster than expected.”
+                        </p>
+                        <p class="testimonial-author">— Anna K.</p>
+                    </article>
+
+                    <article class="testimonial">
+                        <p class="testimonial-text">
+                            “From the first consultation I felt safe. Every question was answered and the
+                            staff supported me during the whole recovery.”
+                        </p>
+                        <p class="testimonial-author">— Peter R.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- News / articles with <time> -->
+        <section class="section" aria-labelledby="news-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="news-title">Insights &amp; updates</h2>
+                    <p>Short educational articles for our patients.</p>
+                </header>
+
+                <div class="news-grid">
+                    <article class="card">
+                        <header>
+                            <h3>How minimally invasive surgery speeds up recovery</h3>
+                            <p class="meta">
+                                <time datetime="2025-02-10">10 February 2025</time> · 4 min read
+                            </p>
+                        </header>
+                        <p>
+                            Minimally invasive techniques allow surgeons to operate through smaller
+                            incisions, which reduces tissue damage and accelerates healing.
+                        </p>
+                        <a href="#" class="text-link">Read more</a>
+                    </article>
+
+                    <article class="card">
+                        <header>
+                            <h3>Preparing for your surgical consultation</h3>
+                            <p class="meta">
+                                <time datetime="2025-03-01">1 March 2025</time> · 3 min read
+                            </p>
+                        </header>
+                        <p>
+                            A short guide on what information to bring, what questions to ask and how
+                            to make the most of your first appointment.
+                        </p>
+                        <a href="#" class="text-link">Read more</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact strip -->
+        <section class="section section--accent" aria-labelledby="contact-strip-title">
+            <div class="container contact-strip">
+                <div>
+                    <h2 id="contact-strip-title">Need to talk to our team?</h2>
+                    <p>
+                        Call us or send an online request and our coordinators will help you choose
+                        the right surgeon and appointment time.
+                    </p>
+                </div>
+                <div class="contact-strip-actions">
+                    <a href="tel:+420123456789" class="btn btn--primary">Call +420 123 456 789</a>
+                    <a href="booking.html" class="btn btn--ghost">Book online</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <h2 class="footer-title">Nova Surgical Center</h2>
+            <p>
+                Fictional surgical clinic created as part of a university student project.
+                All texts and images are AI-generated for educational purposes only.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Surgeons</a></li>
+                <li><a href="booking.html">Book an Appointment</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Contact</h3>
+            <p>Green Avenue 12, Prague</p>
+            <p>Phone: <a href="tel:+420123456789">+420 123 456 789</a></p>
+            <p>Email: <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
+            <p>Opening hours: Mon–Fri 8:00–18:00</p>
+        </div>
+
+        <aside class="footer-column" aria-label="Project information">
+            <h3 class="footer-subtitle">Project info</h3>
+            <p>Student project – Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan</p>
+            <p>Course: Web Design / UX</p>
+            <p>Year: 2025</p>
+        </aside>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>© 2025 Nova Surgical Center (fictional). Student project — Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan</p>
+            <p class="footer-note">
+                This website is a non-commercial prototype created for educational purposes only.
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+        

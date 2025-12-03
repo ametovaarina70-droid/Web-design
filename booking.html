@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment – Nova Surgical Center</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">NSC</span>
+            <span class="logo-text">Nova Surgical Center</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="doctors.html" class="nav-link">Surgeons</a></li>
+                <li><a href="booking.html" class="nav-link nav-link--active">Book an Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+         <!-- Language switcher (visual only, demo) -->
+        <div class="lang-switch" aria-label="Language selector">
+            <span class="lang-switch__icon" aria-hidden="true">🌐</span>
+            <a href="#" class="lang-switch__link lang-switch__link--active" lang="en">EN</a>
+            <span class="lang-switch__divider">/</span>
+            <a href="#" class="lang-switch__link" lang="cs">CS</a>
+        </div>
+
+        <form class="site-search" action="search-results.html" method="get" role="search">
+            <label class="visually-hidden" for="global-search">Search on this site</label>
+            <input
+                id="global-search"
+                type="search"
+                name="q"
+                class="search-input"
+                placeholder="Search procedures or surgeons"
+                aria-label="Search"
+                required
+            >
+            <button type="submit" class="btn btn--secondary">Search</button>
+        </form>
+    </div>
+</header>
+
+<main class="site-main">
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol class="breadcrumbs-list">
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Book an Appointment</li>
+        </ol>
+    </nav>
+
+    <section class="section" aria-labelledby="booking-title">
+        <div class="container booking-layout">
+            <div class="booking-main">
+                <header class="section-header">
+                    <h1 id="booking-title">Book a Surgical Consultation</h1>
+                    <p>
+                        Use the form below to request an appointment for a surgical consultation
+                        or a specific procedure. This is a non-functional demo form created
+                        as part of a student project.
+                    </p>
+                </header>
+
+                <form class="booking-form" action="#" method="post">
+                    <!-- Step 1 -->
+                    <section class="form-step" aria-labelledby="step-1-title">
+                        <div class="form-step-header">
+                            <span class="step-badge">1</span>
+                            <div>
+                                <h2 id="step-1-title">Choose procedure</h2>
+                                <p>Select the type of surgery or consultation you need.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="procedure-type">Procedure type</label>
+                                <select id="procedure-type" name="procedure-type" required>
+                                    <option value="">Select a procedure</option>
+                                    <option value="hernia">Hernia repair</option>
+                                    <option value="gallbladder">Gallbladder (laparoscopic)</option>
+                                    <option value="consultation">Surgical consultation only</option>
+                                    <option value="tumor">Soft tissue tumor removal</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="urgency">Urgency</label>
+                                <select id="urgency" name="urgency" required>
+                                    <option value="">Select urgency</option>
+                                    <option value="routine">Routine (within 2–4 weeks)</option>
+                                    <option value="soon">Soon (within 7 days)</option>
+                                    <option value="urgent">Urgent (as soon as possible)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Step 2 -->
+                    <section class="form-step" aria-labelledby="step-2-title">
+                        <div class="form-step-header">
+                            <span class="step-badge">2</span>
+                            <div>
+                                <h2 id="step-2-title">Choose surgeon</h2>
+                                <p>You can select a preferred surgeon or let us assign one.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="surgeon">Preferred surgeon</label>
+                                <select id="surgeon" name="surgeon">
+                                    <option value="any">No preference – assign a suitable surgeon</option>
+                                    <option value="hart">Dr. Michael Hart – General &amp; Minimally Invasive</option>
+                                    <option value="foster">Dr. Elena Foster – GI &amp; Oncologic</option>
+                                    <option value="rivera">Dr. Tomas Rivera – Reconstructive</option>
+                                </select>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="language">Preferred language</label>
+                                <select id="language" name="language">
+                                    <option value="en">English</option>
+                                    <option value="cs">Czech</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Step 3 -->
+                    <section class="form-step" aria-labelledby="step-3-title">
+                        <div class="form-step-header">
+                            <span class="step-badge">3</span>
+                            <div>
+                                <h2 id="step-3-title">Select date and time</h2>
+                                <p>We will try to match your preference as closely as possible.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="preferred-date">Preferred date</label>
+                                <input
+                                    type="date"
+                                    id="preferred-date"
+                                    name="preferred-date"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="time-slot">Preferred time of day</label>
+                                <select id="time-slot" name="time-slot" required>
+                                    <option value="">Select a time range</option>
+                                    <option value="morning">Morning (8:00–11:00)</option>
+                                    <option value="noon">Midday (11:00–14:00)</option>
+                                    <option value="afternoon">Afternoon (14:00–18:00)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Step 4 -->
+                    <section class="form-step" aria-labelledby="step-4-title">
+                        <div class="form-step-header">
+                            <span class="step-badge">4</span>
+                            <div>
+                                <h2 id="step-4-title">Your personal details</h2>
+                                <p>Provide contact information so we can confirm your appointment.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-grid form-grid--2">
+                            <div class="form-field">
+                                <label for="full-name">Full name</label>
+                                <input
+                                    type="text"
+                                    id="full-name"
+                                    name="full-name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="phone">Phone number</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    autocomplete="tel"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="birthdate">Date of birth</label>
+                                <input
+                                    type="date"
+                                    id="birthdate"
+                                    name="birthdate"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="notes">Short description of your problem</label>
+                            <textarea
+                                id="notes"
+                                name="notes"
+                                rows="4"
+                                placeholder="Describe your symptoms, diagnosis or previous surgery..."
+                            ></textarea>
+                        </div>
+                    </section>
+
+                    <!-- Step 5 -->
+                    <section class="form-step" aria-labelledby="step-5-title">
+                        <div class="form-step-header">
+                            <span class="step-badge">5</span>
+                            <div>
+                                <h2 id="step-5-title">Review and send</h2>
+                                <p>
+                                    This form is a non-functional example. When used in real life,
+                                    the clinic would review your request and contact you to confirm
+                                    the exact date and time.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="booking-actions">
+                            <button type="submit" class="btn btn--primary">
+                                Submit request
+                            </button>
+                            <p class="booking-note">
+                                By submitting this request, you confirm that the information
+                                provided is correct to the best of your knowledge.
+                            </p>
+                        </div>
+                    </section>
+                </form>
+
+                <!-- Fake confirmation block (static text, без JS) -->
+                <section class="section section--muted booking-confirmation" aria-label="Confirmation example">
+                    <h2>Example of confirmation message</h2>
+                    <p>
+                        Thank you for your request. This is a sample confirmation message.
+                        In a real system, you would receive an email or SMS with the details
+                        of your appointment.
+                    </p>
+                </section>
+            </div>
+
+            <aside class="booking-sidebar" aria-label="Helpful information">
+                <div class="card">
+                    <h2>Before your visit</h2>
+                    <ul class="doctor-info-list">
+                        <li>Bring your ID and insurance card.</li>
+                        <li>Prepare a list of current medications.</li>
+                        <li>Bring results of previous examinations if available.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>Important notice</h2>
+                    <p>
+                        This website and booking form are part of a university student project.
+                        No real medical services are provided through this site.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <h2 class="footer-title">Nova Surgical Center</h2>
+            <p>
+                Fictional surgical clinic created as part of a university student project.
+                All texts and images are AI-generated for educational purposes only.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Surgeons</a></li>
+                <li><a href="booking.html">Book an Appointment</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Contact</h3>
+            <p>Green Avenue 12, Prague</p>
+            <p>Phone: <a href="tel:+420123456789">+420 123 456 789</a></p>
+            <p>Email: <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
+            <p>Opening hours: Mon–Fri 8:00–18:00</p>
+        </div>
+
+        <aside class="footer-column" aria-label="Project information">
+            <h3 class="footer-subtitle">Project info</h3>
+            <p>Student project – Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan</p>
+            <p>Course: Web Design / UX</p>
+            <p>Year: 2025</p>
+        </aside>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>© 2025 Nova Surgical Center (fictional). Student project — Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan.</p>
+            <p class="footer-note">
+                This website is a non-commercial prototype created for educational purposes only.
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

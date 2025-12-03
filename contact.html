@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Nova Surgical Center</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">NSC</span>
+            <span class="logo-text">Nova Surgical Center</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="doctors.html" class="nav-link">Surgeons</a></li>
+                <li><a href="booking.html" class="nav-link">Book an Appointment</a></li>
+                <li><a href="contact.html" class="nav-link nav-link--active">Contact</a></li>
+            </ul>
+        </nav>
+
+
+         <!-- Language switcher (visual only, demo) -->
+        <div class="lang-switch" aria-label="Language selector">
+            <span class="lang-switch__icon" aria-hidden="true">🌐</span>
+            <a href="#" class="lang-switch__link lang-switch__link--active" lang="en">EN</a>
+            <span class="lang-switch__divider">/</span>
+            <a href="#" class="lang-switch__link" lang="cs">CS</a>
+        </div>
+        
+        <form class="site-search" action="search-results.html" method="get" role="search">
+            <label class="visually-hidden" for="global-search">Search on this site</label>
+            <input
+                id="global-search"
+                type="search"
+                name="q"
+                class="search-input"
+                placeholder="Search procedures or surgeons"
+                aria-label="Search"
+                required
+            >
+            <button type="submit" class="btn btn--secondary">Search</button>
+        </form>
+    </div>
+</header>
+
+<main class="site-main">
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol class="breadcrumbs-list">
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Contact</li>
+        </ol>
+    </nav>
+
+    <section class="section" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+            <div class="contact-main">
+                <header class="section-header">
+                    <h1 id="contact-title">Contact us</h1>
+                    <p>
+                        Contact our team for questions about appointments, surgery preparation
+                        or general information about the clinic.
+                    </p>
+                </header>
+
+                <section aria-labelledby="where-title">
+                    <h2 id="where-title">Where to find us</h2>
+                    <p><strong>Address:</strong> Jugoslávských partyzánů 1580/3, 160 00 Praha 6 – Dejvice</p>
+                    <p><strong>Public transport:</strong>Metro A – station “Dejvická”, Tram 20, 26 – stop “Dejvická”</p>
+                    <p><strong>Parking:</strong> Paid street parking and public garages near the metro station.</p>
+
+                    <!-- Просто картинка-карта, можешь потом подставить свою -->
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0926444112706!2d14.392158776382079!3d50.103272871527956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b953bb73ffcaf%3A0xadd49cae630be91!2sJugosl%C3%A1vsk%C3%BDch%20partyz%C3%A1n%C5%AF%201580%2F3%2C%20160%2000%20Praha%206-Dejvice!5e0!3m2!1sru!2scz!4v1764000944144!5m2!1sru!2scz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+
+                <section aria-labelledby="hours-title">
+                    <h2 id="hours-title">Opening hours</h2>
+                    <table class="contact-hours-table">
+                        <tbody>
+                        <tr>
+                            <th scope="row">Monday–Friday</th>
+                            <td>08:00 – 18:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturday</th>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sunday</th>
+                            <td>Closed</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <aside class="contact-sidebar" aria-label="Contact form and phones">
+                <section class="card">
+                    <h2>Contact form</h2>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-field">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="4"
+                                      placeholder="Write your question or message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary">Send message (demo)</button>
+                    </form>
+                </section>
+
+                <section class="card">
+                    <h2>Phone &amp; email</h2>
+                    <p><strong>General information:</strong> <a href="tel:+420123456789">+420 123 456 789</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
+                    <p><strong>Emergency:</strong> call the national emergency number 155.</p>
+                    <p class="footer-note">
+                        This website is a student prototype. No real medical services are provided.
+                    </p>
+                </section>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <h2 class="footer-title">Nova Surgical Center</h2>
+            <p>
+                Fictional surgical clinic created as part of a university student project.
+                All texts and images are AI-generated for educational purposes only.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Surgeons</a></li>
+                <li><a href="booking.html">Book an Appointment</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Contact</h3>
+            <p>Green Avenue 12, Prague</p>
+            <p>Phone: <a href="tel:+420123456789">+420 123 456 789</a></p>
+            <p>Email: <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
+            <p>Opening hours: Mon–Fri 8:00–18:00</p>
+        </div>
+
+        <aside class="footer-column" aria-label="Project information">
+            <h3 class="footer-subtitle">Project info</h3>
+            <p>Student project – Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan</p>
+            <p>Course: Web Design / UX</p>
+            <p>Year: 2025</p>
+        </aside>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>© 2025 Nova Surgical Center (fictional). Student project — Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan</p>
+            <p class="footer-note">
+                This website is a non-commercial prototype created for educational purposes only.
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

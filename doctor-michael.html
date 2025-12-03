@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Michael Hart – Surgeon Profile</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">NSC</span>
+            <span class="logo-text">Nova Surgical Center</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="doctors.html" class="nav-link nav-link--active">Surgeons</a></li>
+                <li><a href="booking.html" class="nav-link">Book an Appointment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+         <!-- Language switcher (visual only, demo) -->
+        <div class="lang-switch" aria-label="Language selector">
+            <span class="lang-switch__icon" aria-hidden="true">🌐</span>
+            <a href="#" class="lang-switch__link lang-switch__link--active" lang="en">EN</a>
+            <span class="lang-switch__divider">/</span>
+            <a href="#" class="lang-switch__link" lang="cs">CS</a>
+        </div>
+
+        <form class="site-search" action="search-results.html" method="get" role="search">
+            <label class="visually-hidden" for="global-search">Search on this site</label>
+            <input
+                id="global-search"
+                type="search"
+                name="q"
+                class="search-input"
+                placeholder="Search procedures or surgeons"
+                aria-label="Search"
+                required
+            >
+            <button type="submit" class="btn btn--secondary">Search</button>
+        </form>
+    </div>
+</header>
+
+<main class="site-main">
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol class="breadcrumbs-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doctors.html">Surgeons</a></li>
+            <li aria-current="page">Dr. Michael Hart</li>
+        </ol>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="section" aria-labelledby="profile-title">
+        <div class="container">
+            <header class="section-header">
+                <h1 id="profile-title">Dr. Michael Hart, MD</h1>
+                <p>General & Minimally Invasive Surgery</p>
+            </header>
+
+            <article class="doctor-profile">
+                <div class="doctor-profile-main">
+                    <img
+                        src="./assets/img/doctors/michael-hart.jpg"
+                        alt="Portrait of Dr. Michael Hart"
+                        class="doctor-detail-photo"
+                    >
+
+                    <div>
+                        <h2>About the Surgeon</h2>
+                        <p>
+                            Dr. Hart is a board-certified surgeon with more than 15 years of practice.
+                            He specializes in minimally invasive procedures, laparoscopic operations,
+                            hernia repair and emergency abdominal surgery.
+                        </p>
+                        <p>
+                            His approach focuses on safety, clear communication, and fast recovery
+                            with the lowest possible complication rates.
+                        </p>
+                    </div>
+                </div>
+
+                <aside class="doctor-sidebar" aria-label="Quick information">
+                    <div class="card">
+                        <h3>Quick info</h3>
+                        <ul class="doctor-info-list">
+                            <li><strong>Experience:</strong> 15+ years</li>
+                            <li><strong>Languages:</strong> English, Czech</li>
+                            <li><strong>Department:</strong> General Surgery</li>
+                            <li><strong>Office:</strong> Surgery Wing, Room 204</li>
+                        </ul>
+
+                        <a href="booking.html" class="btn btn--primary" style="margin-top: 1rem;">
+                            Book appointment
+                        </a>
+                    </div>
+                </aside>
+            </article>
+        </div>
+    </section>
+
+    <!-- Procedures Table -->
+    <section class="section section--muted" aria-labelledby="procedures-title">
+        <div class="container">
+            <header class="section-header">
+                <h2 id="procedures-title">Common Procedures</h2>
+                <p>Below is an overview of procedures performed by Dr. Hart.</p>
+            </header>
+
+            <table class="procedures-table">
+                <thead>
+                    <tr>
+                        <th>Procedure</th>
+                        <th>Estimated duration</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Laparoscopic Cholecystectomy</td>
+                        <td>60–90 min</td>
+                        <td>Minimally invasive, quick recovery</td>
+                    </tr>
+
+                    <tr>
+                        <td>Hernia Repair</td>
+                        <td>45–60 min</td>
+                        <td>Often performed as outpatient surgery</td>
+                    </tr>
+
+                    <tr>
+                        <td>Appendectomy</td>
+                        <td>30–60 min</td>
+                        <td>Emergency procedure</td>
+                    </tr>
+
+                    <tr>
+                        <td>Soft Tissue Tumor Removal</td>
+                        <td>Varies</td>
+                        <td>Requires pre-operative consultation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact Strip -->
+    <section class="section section--accent" aria-labelledby="call-action-title">
+        <div class="container contact-strip">
+            <div>
+                <h2 id="call-action-title">Need help choosing a procedure?</h2>
+                <p>Contact our coordinators and we will guide you.</p>
+            </div>
+            <div class="contact-strip-actions">
+                <a href="tel:+420123456789" class="btn btn--primary">Call +420 123 456 789</a>
+                <a href="booking.html" class="btn btn--ghost">Book online</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <h2 class="footer-title">Nova Surgical Center</h2>
+            <p>
+                Fictional surgical clinic created as part of a university student project.
+                All texts and images are AI-generated for educational purposes only.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Navigation</h3>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Surgeons</a></li>
+                <li><a href="booking.html">Book an Appointment</a></li>
+                <li><a href="search-results.html">Search</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-subtitle">Contact</h3>
+            <p>Green Avenue 12, Prague</p>
+            <p>Phone: <a href="tel:+420123456789">+420 123 456 789</a></p>
+            <p>Email: <a href="mailto:info@novasurgery.cz">info@novasurgery.cz</a></p>
+            <p>Opening hours: Mon–Fri 8:00–18:00</p>
+        </div>
+
+        <aside class="footer-column" aria-label="Project information">
+            <h3 class="footer-subtitle">Project info</h3>
+            <p>Student project – Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan</p>
+            <p>Course: Web Design / UX</p>
+            <p>Year: 2025</p>
+        </aside>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>© 2025 Nova Surgical Center (fictional). Student project — Ametova Arina, Abdyvalieba Adelina, Akimzhan Nurbolot, Tolonov Bekzhan</p>
+            <p class="footer-note">
+                This website is a non-commercial prototype created for educational purposes only.
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
