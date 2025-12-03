@@ -1020,7 +1020,7 @@ ol {
     padding-bottom: var(--spacing-3xl);
     background-image:
         linear-gradient(120deg, rgba(6, 53, 116, 0.55), rgba(10, 90, 216, 0.45)),
-        url("../img/doctors/hero-banner.jpg");
+        url("../assets/img/doctors/hero-banner.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1402,4 +1402,5 @@ ol {
 .lang-switch__divider {
     color: var(--color-text-muted);
     font-size: 0.75em;}
+
 
